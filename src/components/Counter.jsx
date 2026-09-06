@@ -8,13 +8,19 @@ export default function Counter() {
         setCount(count + value)
     }
 
+    const handleDecreament = () => {
+        if(count > 0) {
+            setCount(count - 1)
+        }
+    }
+
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>Increament</button>
       
       <button onClick={() => handleIncreamentByValue(5)}>Increament By Value</button>
 
-      <button onClick={() => setCount(count - 1)}>Decreament</button>
+      <button onClick={handleDecreament}>Decreament</button>
 
       {count}
     </div>
