@@ -1,5 +1,6 @@
 import "./App.css";
 import Card from "./components/Card";
+import Counter from "./components/Counter";
 // import TestContent from "./TestContent";
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         .map((u) => (
           <Card name={u.name} age={u.age} />
         ))}
+
+        <Counter />
     </>
   );
 }
